@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="puzzles.ventures.zoomoneytest.InputActivity">
+    <!--좌측 광고 이미지-->
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/piggybank"
+            android:id="@+id/inputLogo"
+            android:layout_width="170dp"
+            android:layout_height="170dp" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="ZooMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--우측 번호 입력 화면-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <!--번호 텍스트뷰-->
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="010 - "
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:maxLength="11"
+                    android:id="@+id/inputPhoneNumber"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <!--입력 버튼-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="1" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="2" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:onClick="btnClick"
+                        android:text="4"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="5" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="7" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="8" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btnDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="←" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btn0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="0" />
+
+                    <Button
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:onClick="btnClick"
+                        android:id="@+id/btnOK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="확인" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
