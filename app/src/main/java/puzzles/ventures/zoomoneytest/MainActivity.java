@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -17,10 +18,19 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("onCheck", "onStart");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         init();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d("onCheck", "onResume");
+        super.onResume();
+        handler.removeCallbacks(runnable);
+        handler.post(runnable);
     }
 
     public void init() {
